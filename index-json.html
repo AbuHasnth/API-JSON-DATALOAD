@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h1>Learning JSON stringyfy </h1>
+
+
+
+
+    <script>
+        const user = {
+            name : "Kamal",
+            id : 190312005,
+            lover : {
+                name: "Jamila",
+                age: 49,
+                FavFood: "Elish"
+            },
+            phone : 02020020202,
+        }
+
+        
+        const JsonString = JSON.stringify(user);
+        console.log(JsonString)
+        //console.log kore below string ti pawa gase jeta age object chilo
+        // index-json.html:28 {"name":"Kamal","id":190312005,"lover":{"name":"Jamila","age":49,"FavFood":"Elish"},"phone":272638082}
+
+        const JsonObject = JSON.parse(JsonString);
+        console.log(JsonObject)
+        //cnsole.log kore string avar object e convert hoe gase
+        
+        // {
+        //     name : "Kamal",
+        //     id : 190312005,
+        //     lover : {
+        //         name: "Jamila",
+        //         age: 49,
+        //         FavFood: "Elish"
+        //     },
+        //     phone : 02020020202,
+        // }
+
+    </script>
+</body>
+</html>
